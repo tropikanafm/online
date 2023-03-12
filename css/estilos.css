@@ -13,25 +13,32 @@ body{
 }
 
 .hero{
-    background-image: linear-gradient(120deg, rgba(221, 127, 221, 0.699) 0%, rgba(65, 7, 15, 0.692) 100%), url("../img/headerx.jpg");
+    /* background-image: linear-gradient(120deg, rgba(221, 127, 221, 0.699) 0%, rgba(65, 7, 15, 0.692) 100%), url("../img/headerx.jpg"); */
     width: 100%;
-    height: 450px;
+    /* height: 450px; */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+    background-color: #3B3B3B;
 }
 
 .textos-hero{
-    height: 340px;
+    margin:auto;
+    max-width: 800px;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.textos-hero img{
+    width:100%;
+}
+
 
 .textos-hero h1{
     font-size: 60px;
@@ -73,7 +80,7 @@ body{
 }
 
 .titulo{
-    font-weight: 300;
+    font-weight: bold;
     font-size: 35px;
     text-align: center;
     margin-bottom: 30px;
@@ -170,18 +177,19 @@ body{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    overflow: hidden;
+    justify-content: center;
+    gap: 20px;
+
 }
 
 .galeria-cont>img{
-    width: 30%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    display: block;
+    object-fit: fill;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
-    cursor: pointer;
-    overflow: hidden;
+    /* cursor: pointer; */
+    /* overflow: hidden; */
+    border-radius: 10px;background-color: #1E1E1E;
+    width: 30%;
+
 }
 
 /* info2 */
@@ -205,53 +213,64 @@ body{
 /* footer */
 
 footer{
-    background: #f5576c;
+    background: #222222;
     color: #fff;
 }
 
-.form{
+.social-media {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
 }
 
-.input{
-    background: transparent;
-    border: 0;
-    color: #fff;
-    outline: none;
-    border: 1px  solid #fff;
-    padding: 20px 10px;
+.social-media a img {
+    width: 2.rem;
 }
+/* .form{ */
+/*     display: flex; */
+/*     flex-wrap: wrap; */
+/*     justify-content: space-between; */
+/* } */
 
-.input::placeholder{
-    color: #fff;
-    font-family: 'raleway', 'sans-serif';
-}
+/* .input{ */
+/*     background: transparent; */
+/*     border: 0; */
+/*     color: #fff; */
+/*     outline: none; */
+/*     border: 1px  solid #fff; */
+/*     padding: 20px 10px; */
+/* } */
 
-input[type="text"], 
-input[type="email"]{
-    display: inline-block;
-    width: 49%;
-    margin-bottom: 30px;
-}
+/* .input::placeholder{ */
+/*     color: #fff; */
+/*     font-family: 'raleway', 'sans-serif'; */
+/* } */
 
-.form textarea{
-    width: 100%;
-    margin-bottom: 15px;
-}
+/* input[type="text"], */ 
+/* input[type="email"]{ */
+/*     display: inline-block; */
+/*     width: 49%; */
+/*     margin-bottom: 30px; */
+/* } */
 
-input[type="submit"]{
-    width: 120px;
-    text-align: center;
-    padding: 14px 0;
-}
+/* .form textarea{ */
+/*     width: 100%; */
+/*     margin-bottom: 15px; */
+/* } */
 
-input[type="submit"]:hover{
-    cursor: pointer;
-    color: tomato;
-    background: #fff;
-}
+/* input[type="submit"]{ */
+/*     width: 120px; */
+/*     text-align: center; */
+/*     padding: 14px 0; */
+/* } */
+
+/* input[type="submit"]:hover{ */
+/*     cursor: pointer; */
+/*     color: tomato; */
+/*     background: #fff; */
+/* } */
 
 @media screen and (max-width:800px){
     .textos-hero h1{
@@ -295,7 +314,7 @@ input[type="submit"]:hover{
 
     /* galeria */
 
-    .galeria-cont>img{
+    .galeria-cont img{
         width: 48%;
     }
 
@@ -313,7 +332,7 @@ input[type="submit"]:hover{
 
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:560px){
     .titulo,
     .textos-hero h1{
         font-size: 30px;
@@ -332,9 +351,10 @@ input[type="submit"]:hover{
         margin-bottom: 30px;
     }
 
-    .galeria-cont>img{
-        width: 97%;
+    .galeria-cont img{
+        width: 40%;
     }
+
 }
 
 .dashboard-header {
@@ -344,4 +364,5 @@ input[type="submit"]:hover{
 .radio-player-container {
     display: flex;
     justify-content: center;
+    padding-top: 80px;
 }
