@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -140,6 +141,12 @@ body{
     flex-wrap: wrap;
 }
 
+
+.publicity-header {
+    margin:auto;
+    width: 100%;
+}
+
 .card{
     width: 30%;
     text-align: center;
@@ -226,7 +233,7 @@ footer{
 }
 
 .social-media a img {
-    width: 2.rem;
+    width: 2.9rem;
 }
 /* .form{ */
 /*     display: flex; */
@@ -366,3 +373,6 @@ footer{
     justify-content: center;
     padding-top: 80px;
 }
+
+
+
